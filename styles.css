@@ -11,20 +11,20 @@ html {
 
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background-color: #1a1a2e;
-	color: #e0e0e0;
+	background-color: #f5f5f5;
+	color: #333333;
 	line-height: 1.6;
 	overflow-x: hidden;
 }
 
 /* ===== NAVBAR ===== */
 .navbar {
-	background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+	background: linear-gradient(135deg, #e8f4f8 0%, #f0f9ff 100%);
 	padding: 1rem 0;
 	position: sticky;
 	top: 0;
 	z-index: 100;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -37,7 +37,7 @@ body {
 }
 
 .logo {
-	color: #00d4ff;
+	color: #0088cc;
 	font-size: 1.8rem;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -50,7 +50,7 @@ body {
 }
 
 .nav-menu a {
-	color: #e0e0e0;
+	color: #333333;
 	text-decoration: none;
 	font-weight: 500;
 	transition: all 0.3s ease;
@@ -64,7 +64,7 @@ body {
 	left: 0;
 	width: 0;
 	height: 2px;
-	background: #00d4ff;
+	background: #0088cc;
 	transition: width 0.3s ease;
 }
 
@@ -75,12 +75,12 @@ body {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-	color: #00d4ff;
+	color: #0088cc;
 }
 
 /* ===== HERO SECTION ===== */
 .hero {
-	background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #0f3460 100%);
+	background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 50%, #e0f2fe 100%);
 	padding: 120px 20px;
 	text-align: center;
 	position: relative;
@@ -94,7 +94,7 @@ body {
 	left: -50%;
 	width: 200%;
 	height: 200%;
-	background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+	background: radial-gradient(circle, rgba(0, 136, 204, 0.08) 0%, transparent 70%);
 	animation: pulse 8s ease-in-out infinite;
 }
 
@@ -111,16 +111,16 @@ body {
 
 .hero h1 {
 	font-size: clamp(2.5rem, 8vw, 4rem);
-	color: #00d4ff;
+	color: #0088cc;
 	margin-bottom: 20px;
 	font-weight: 800;
 	letter-spacing: 2px;
-	text-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+	text-shadow: 0 0 30px rgba(0, 136, 204, 0.15);
 }
 
 .hero p {
 	font-size: 1.3rem;
-	color: #c0c0c0;
+	color: #555555;
 	letter-spacing: 1px;
 }
 
@@ -137,14 +137,14 @@ body {
 
 /* ===== VALUES SECTION ===== */
 .values {
-	background-color: #1a1a2e;
+	background-color: #ffffff;
 	padding: 80px 20px;
 }
 
 .values h2 {
 	text-align: center;
 	font-size: 2.5rem;
-	color: #00d4ff;
+	color: #0088cc;
 	margin-bottom: 60px;
 	position: relative;
 	display: inline-block;
@@ -159,7 +159,7 @@ body {
 	transform: translateX(-50%);
 	width: 60px;
 	height: 4px;
-	background: linear-gradient(90deg, #00d4ff, #ffb700);
+	background: linear-gradient(90deg, #0088cc, #ffa500);
 }
 
 .values-grid {
@@ -172,11 +172,11 @@ body {
 }
 
 .value-card {
-	background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+	background: linear-gradient(135deg, #f8fbff 0%, #f0f9ff 100%);
 	padding: 40px;
 	border-radius: 15px;
 	text-align: center;
-	border: 1px solid rgba(0, 212, 255, 0.2);
+	border: 1px solid rgba(0, 136, 204, 0.3);
 	transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	animation: slideUp 0.8s ease both;
 }
@@ -198,9 +198,9 @@ body {
 
 .value-card:hover {
 	transform: translateY(-15px);
-	border-color: #00d4ff;
-	box-shadow: 0 20px 50px rgba(0, 212, 255, 0.2);
-	background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+	border-color: #0088cc;
+	box-shadow: 0 20px 50px rgba(0, 136, 204, 0.15);
+	background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
 }
 
 .value-icon {
@@ -220,28 +220,28 @@ body {
 }
 
 .value-card h3 {
-	color: #ffb700;
+	color: #ff8c00;
 	font-size: 1.5rem;
 	margin-bottom: 15px;
 	font-weight: 700;
 }
 
 .value-card p {
-	color: #b0b0b0;
+	color: #666666;
 	line-height: 1.8;
 	font-size: 1rem;
 }
 
 /* ===== HIGHLIGHTS SECTION ===== */
 .highlights {
-	background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+	background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
 	padding: 80px 20px;
 }
 
 .highlights h2 {
 	text-align: center;
 	font-size: 2.5rem;
-	color: #00d4ff;
+	color: #0088cc;
 	margin-bottom: 60px;
 	position: relative;
 	display: inline-block;
@@ -256,7 +256,7 @@ body {
 	transform: translateX(-50%);
 	width: 60px;
 	height: 4px;
-	background: linear-gradient(90deg, #ffb700, #00d4ff);
+	background: linear-gradient(90deg, #ffa500, #0088cc);
 }
 
 .highlights-container {
@@ -273,10 +273,10 @@ body {
 	grid-template-columns: 1fr 1fr;
 	gap: 40px;
 	align-items: center;
-	background: rgba(22, 33, 62, 0.5);
+	background: rgba(240, 249, 255, 0.8);
 	padding: 40px;
 	border-radius: 15px;
-	border: 1px solid rgba(0, 212, 255, 0.1);
+	border: 1px solid rgba(0, 136, 204, 0.2);
 	transition: all 0.4s ease;
 	animation: slideIn 0.8s ease both;
 }
@@ -297,8 +297,8 @@ body {
 }
 
 .highlight-card:hover {
-	border-color: #00d4ff;
-	box-shadow: 0 20px 50px rgba(0, 212, 255, 0.15);
+	border-color: #0088cc;
+	box-shadow: 0 20px 50px rgba(0, 136, 204, 0.12);
 	transform: translateY(-8px);
 }
 
@@ -315,25 +315,25 @@ body {
 	width: 100%;
 	height: auto;
 	border-radius: 12px;
-	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 	transition: all 0.4s ease;
 	object-fit: cover;
 }
 
 .highlight-card:hover img {
 	transform: scale(1.05);
-	box-shadow: 0 30px 70px rgba(0, 212, 255, 0.25);
+	box-shadow: 0 30px 70px rgba(0, 136, 204, 0.2);
 }
 
 .highlight-content h3 {
-	color: #ffb700;
+	color: #ff8c00;
 	font-size: 1.8rem;
 	margin-bottom: 15px;
 	font-weight: 700;
 }
 
 .highlight-content p {
-	color: #c0c0c0;
+	color: #555555;
 	line-height: 1.8;
 	margin-bottom: 20px;
 	font-size: 1.05rem;
@@ -343,8 +343,8 @@ body {
 .btn-primary {
 	display: inline-block;
 	padding: 12px 35px;
-	background: linear-gradient(135deg, #00d4ff 0%, #00a8cc 100%);
-	color: #0f3460 !important;
+	background: linear-gradient(135deg, #0088cc 0%, #0066aa 100%);
+	color: #ffffff !important;
 	border-radius: 50px;
 	font-weight: 700;
 	font-size: 0.95rem;
@@ -352,7 +352,7 @@ body {
 	letter-spacing: 1px;
 	text-decoration: none;
 	transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-	box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+	box-shadow: 0 10px 30px rgba(0, 136, 204, 0.3);
 	border: none;
 	cursor: pointer;
 	position: relative;
@@ -374,7 +374,7 @@ body {
 
 .btn-primary:hover {
 	transform: translateY(-5px);
-	box-shadow: 0 20px 50px rgba(0, 212, 255, 0.5);
+	box-shadow: 0 20px 50px rgba(0, 136, 204, 0.5);
 }
 
 .btn-primary:hover::before {
@@ -384,14 +384,14 @@ body {
 
 /* ===== GALLERY SECTION ===== */
 .gallery-preview {
-	background-color: #1a1a2e;
+	background-color: #ffffff;
 	padding: 80px 20px;
 }
 
 .gallery-preview h2 {
 	text-align: center;
 	font-size: 2.5rem;
-	color: #00d4ff;
+	color: #0088cc;
 	margin-bottom: 60px;
 	position: relative;
 	display: inline-block;
@@ -406,7 +406,7 @@ body {
 	transform: translateX(-50%);
 	width: 60px;
 	height: 4px;
-	background: linear-gradient(90deg, #00d4ff, #ffb700);
+	background: linear-gradient(90deg, #0088cc, #ffa500);
 }
 
 .gallery-grid {
@@ -423,7 +423,7 @@ body {
 	border-radius: 12px;
 	overflow: hidden;
 	aspect-ratio: 1;
-	border: 2px solid rgba(0, 212, 255, 0.2);
+	border: 2px solid rgba(0, 136, 204, 0.3);
 	transition: all 0.4s ease;
 	animation: fadeInUp 0.8s ease both;
 }
@@ -436,8 +436,8 @@ body {
 .gallery-item:nth-child(6) { animation-delay: 0.6s; }
 
 .gallery-item:hover {
-	border-color: #00d4ff;
-	box-shadow: 0 20px 50px rgba(0, 212, 255, 0.2);
+	border-color: #0088cc;
+	box-shadow: 0 20px 50px rgba(0, 136, 204, 0.2);
 	transform: translateY(-10px);
 }
 
@@ -454,10 +454,10 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-	background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
-	color: #e0e0e0;
+	background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+	color: #333333;
 	padding: 60px 20px 30px;
-	border-top: 3px solid #00d4ff;
+	border-top: 3px solid #0088cc;
 	position: relative;
 	overflow: hidden;
 }
@@ -469,7 +469,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 50%);
+	background: radial-gradient(circle at 20% 50%, rgba(0, 136, 204, 0.05) 0%, transparent 50%);
 	z-index: 0;
 }
 
@@ -484,7 +484,7 @@ body {
 }
 
 .footer-section h4 {
-	color: #00d4ff;
+	color: #0088cc;
 	font-size: 1.2rem;
 	margin-bottom: 15px;
 	font-weight: 700;
@@ -493,19 +493,19 @@ body {
 }
 
 .footer-section p {
-	color: #b0b0b0;
+	color: #666666;
 	line-height: 1.8;
 	font-size: 0.95rem;
 }
 
 .footer-section a {
-	color: #00d4ff;
+	color: #0088cc;
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-	color: #ffb700;
+	color: #ff8c00;
 }
 
 /* ===== RESPONSIVE ===== */
